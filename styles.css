@@ -1146,6 +1146,10 @@ h1 {
     width: 100%;
   }
 
+  .hero-actions {
+    bottom: clamp(32px, 4svh, 44px);
+  }
+
   h1 {
     max-width: 590px;
     font-size: clamp(42px, 5.9vw, 48px);
@@ -1244,7 +1248,7 @@ h1 {
   }
 
   .hero-actions {
-    bottom: clamp(48px, 6svh, 58px);
+    bottom: clamp(20px, 3svh, 30px);
     flex-direction: column;
     gap: 8px;
   }
