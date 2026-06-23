@@ -335,7 +335,11 @@ h1 {
 }
 
 .hero-actions {
+  position: absolute;
+  bottom: clamp(56px, 7svh, 72px);
+  left: 0;
   display: flex;
+  width: min(650px, 100%);
   gap: 14px;
 }
 
@@ -1240,6 +1244,7 @@ h1 {
   }
 
   .hero-actions {
+    bottom: clamp(48px, 6svh, 58px);
     flex-direction: column;
     gap: 8px;
   }
