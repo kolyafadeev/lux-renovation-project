@@ -289,9 +289,9 @@ input:focus-visible {
   min-height: 0;
   flex: 1;
   flex-direction: column;
-  justify-content: flex-start;
-  padding-top: clamp(76px, 9svh, 96px);
-  padding-bottom: clamp(56px, 7svh, 76px);
+  justify-content: center;
+  padding-top: clamp(52px, 6svh, 72px);
+  padding-bottom: clamp(52px, 6svh, 72px);
 }
 
 .hero-copy {
@@ -318,16 +318,16 @@ h1 {
   max-width: 650px;
   margin-bottom: 32px;
   font-family: var(--font-heading);
-  font-size: clamp(56px, 4.6vw, 66px);
-  font-weight: 700;
-  line-height: 1.04;
-  letter-spacing: -0.032em;
+  font-size: clamp(54px, 4.3vw, 64px);
+  font-weight: 650;
+  line-height: 1.05;
+  letter-spacing: -0.03em;
   text-wrap: balance;
 }
 
 .hero-lead {
   max-width: 620px;
-  margin-bottom: 40px;
+  margin-bottom: 44px;
   color: rgba(255, 255, 255, 0.72);
   font-size: clamp(16px, 1.15vw, 17px);
   font-weight: 400;
@@ -1121,6 +1121,7 @@ h1 {
 
   .hero-inner {
     min-height: 0;
+    justify-content: flex-start;
     padding-top: 58px;
     padding-bottom: 52px;
   }
@@ -1234,6 +1235,12 @@ h1 {
   .hero-actions .button {
     width: 100%;
     min-height: 48px;
+  }
+
+  .hero-actions .button-outline {
+    min-height: 44px;
+    border-color: rgba(255, 255, 255, 0.34);
+    background: rgba(8, 8, 8, 0.16);
   }
 
   .features-strip {
