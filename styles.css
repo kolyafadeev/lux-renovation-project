@@ -1129,6 +1129,7 @@ h1 {
 
   .hero-image {
     top: auto;
+    bottom: clamp(96px, 11svh, 112px);
     width: 100%;
     height: 54%;
     background-image: linear-gradient(180deg, var(--black) 0%, rgba(8, 9, 9, 0.18) 34%), linear-gradient(0deg, rgba(8, 9, 9, 0.45), transparent 45%), url("assets/hero-living-room.png");
@@ -1223,6 +1224,10 @@ h1 {
   .hero {
     min-height: max(720px, calc(100vh - var(--header-height)));
     min-height: max(720px, calc(100svh - var(--header-height)));
+  }
+
+  .hero-image {
+    bottom: clamp(132px, 16svh, 144px);
   }
 
   .hero-inner {
