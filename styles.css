@@ -930,6 +930,36 @@ h1 {
   color: var(--gold-light);
 }
 
+.reveal-ready .reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 800ms cubic-bezier(0.22, 1, 0.36, 1), transform 800ms cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: var(--reveal-delay, 0ms);
+  will-change: opacity, transform;
+}
+
+.reveal-ready .reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  will-change: auto;
+}
+
+.steps-grid .step-card:nth-child(2) {
+  --reveal-delay: 80ms;
+}
+
+.steps-grid .step-card:nth-child(3) {
+  --reveal-delay: 160ms;
+}
+
+.steps-grid .step-card:nth-child(4) {
+  --reveal-delay: 240ms;
+}
+
+.portfolio .comparison {
+  --reveal-delay: 100ms;
+}
+
 @media (max-width: 1120px) {
   .main-nav {
     gap: 22px;
@@ -1322,5 +1352,11 @@ h1 {
     transition-duration: 0.01ms !important;
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
+  }
+
+  .reveal-ready .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
   }
 }

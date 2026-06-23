@@ -2,6 +2,10 @@ const menuToggle = document.querySelector('.menu-toggle');
 const mainNav = document.querySelector('.main-nav');
 const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+if (!prefersReducedMotion) {
+  document.documentElement.classList.add('reveal-ready');
+}
+
 function closeMenu() {
   if (!menuToggle || !mainNav) return;
   menuToggle.setAttribute('aria-expanded', 'false');
@@ -44,9 +48,35 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
     if (!target) return;
     event.preventDefault();
     closeMenu();
+
+    if (selector === '#top') {
+      window.scrollTo({ top: 0, behavior: prefersReducedMotion ? 'auto' : 'smooth' });
+      return;
+    }
+
     target.scrollIntoView({ behavior: prefersReducedMotion ? 'auto' : 'smooth', block: 'start' });
   });
 });
+
+const revealElements = document.querySelectorAll('.reveal');
+
+if (!prefersReducedMotion && 'IntersectionObserver' in window) {
+  const revealObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add('is-visible');
+      observer.unobserve(entry.target);
+    });
+  }, {
+    threshold: 0.12,
+    rootMargin: '0px 0px -8% 0px',
+  });
+
+  revealElements.forEach((element) => revealObserver.observe(element));
+} else {
+  revealElements.forEach((element) => element.classList.add('is-visible'));
+  document.documentElement.classList.remove('reveal-ready');
+}
 
 const comparison = document.querySelector('.comparison');
 const comparisonRange = document.querySelector('.comparison-range');
