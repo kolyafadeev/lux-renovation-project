@@ -976,6 +976,18 @@ h1 {
   --reveal-delay: 240ms;
 }
 
+.features .feature:nth-child(2) {
+  --reveal-delay: 80ms;
+}
+
+.features .feature:nth-child(3) {
+  --reveal-delay: 160ms;
+}
+
+.features .feature:nth-child(4) {
+  --reveal-delay: 240ms;
+}
+
 .portfolio .comparison {
   --reveal-delay: 100ms;
 }
