@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lux Renovation — дизайнерский ремонт квартир и домов под ключ.">
+  <title>Lux Renovation — ремонт премиум-класса</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Lux Renovation — на главную">
+        <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+          <defs>
+            <linearGradient id="logo-gold" x1="7" y1="5" x2="41" y2="43" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#f6d27f"/>
+              <stop offset="0.52" stop-color="#d8a642"/>
+              <stop offset="1" stop-color="#a96d20"/>
+            </linearGradient>
+          </defs>
+          <path d="M24 4 43 23 24 44 5 23 24 4Z" fill="none" stroke="url(#logo-gold)" stroke-width="2.2"/>
+          <path d="m11 28 13-13 13 13M15.5 32.5 24 24l8.5 8.5" fill="none" stroke="url(#logo-gold)" stroke-width="2.8" stroke-linecap="square" stroke-linejoin="miter"/>
+          <path d="M24 9.5 37.5 23 24 36.5 10.5 23 24 9.5Z" fill="none" stroke="url(#logo-gold)" stroke-width="1" opacity=".46"/>
+          <path d="M24 20.2 27.8 24 24 27.8 20.2 24 24 20.2Z" fill="url(#logo-gold)"/>
+        </svg>
+        <span class="brand-copy">
+          <span class="brand-name">Lux Renovation</span>
+          <span class="brand-tagline">ремонт премиум-класса</span>
+        </span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Открыть меню">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" id="main-nav" aria-label="Основная навигация">
+        <a href="#services">Услуги</a>
+        <a href="#portfolio">Портфолио</a>
+        <a href="#calculator">Смета</a>
+        <a href="#contacts">Контакты</a>
+        <a class="button button-small button-gold" href="#calculator">Рассчитать смету</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-image" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">Ремонт премиум-класса</p>
+          <h1 id="hero-title">Создаём дизайнерский ремонт под ключ</h1>
+          <p class="hero-lead">Премиальный ремонт квартир и домов с фиксированной стоимостью и сроками. Качество, которое вы почувствуете.</p>
+          <div class="hero-actions">
+            <a class="button button-gold" href="#calculator">Рассчитать стоимость</a>
+            <a class="button button-outline" href="#portfolio">Смотреть портфолио</a>
+          </div>
+        </div>
+
+        <div class="features" aria-label="Наши преимущества">
+          <article class="feature">
+            <svg class="icon-svg feature-icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+              <path d="M24 4.5 40 10v12.2c0 10-6.7 17.2-16 21.3-9.3-4.1-16-11.3-16-21.3V10l16-5.5Z"/>
+              <path d="m16.5 24 5 5 10.5-11"/>
+            </svg>
+            <p><strong>Фиксированная смета</strong><span>без скрытых расходов</span></p>
+          </article>
+          <article class="feature">
+            <svg class="icon-svg feature-icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+              <rect x="6.5" y="9" width="35" height="32" rx="4"/>
+              <path d="M14 5.5v8M34 5.5v8M7 17.5h34"/>
+              <circle cx="27" cy="29" r="7.5"/>
+              <path d="M27 24.5V29l3.5 2"/>
+            </svg>
+            <p><strong>Соблюдение сроков</strong><span>по договору</span></p>
+          </article>
+          <article class="feature">
+            <svg class="icon-svg feature-icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+              <circle cx="24" cy="18" r="11"/>
+              <path d="m18 27.2-4 15.3 10-5.3 10 5.3-4-15.3"/>
+              <path d="m24 11.5 2 4.1 4.5.6-3.2 3.2.8 4.5-4.1-2.1-4.1 2.1.8-4.5-3.2-3.2 4.5-.6 2-4.1Z"/>
+            </svg>
+            <p><strong>Премиальные</strong><span>материалы</span></p>
+          </article>
+          <article class="feature">
+            <svg class="icon-svg feature-icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+              <circle cx="24" cy="15" r="7.5"/>
+              <path d="M9.5 41c.8-9.7 6.2-15 14.5-15s13.7 5.3 14.5 15H9.5Z"/>
+              <path d="m37.5 8 .8 2.2 2.2.8-2.2.8-.8 2.2-.8-2.2-2.2-.8 2.2-.8.8-2.2Z"/>
+            </svg>
+            <p><strong>Персональный</strong><span>менеджер</span></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="steps section" id="services" aria-labelledby="steps-title">
+      <div class="container">
+        <div class="section-heading compact-heading">
+          <p class="eyebrow">От идеи до результата</p>
+          <h2 id="steps-title">Этапы работы</h2>
+          <span class="heading-line" aria-hidden="true"></span>
+        </div>
+
+        <div class="steps-grid">
+          <article class="step-card">
+            <div class="step-top">
+              <span class="step-number">01</span>
+              <svg class="icon-svg step-icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+                <rect x="5.5" y="9" width="31" height="29" rx="5"/>
+                <circle cx="19" cy="23.5" r="8"/>
+                <path d="M19 19.5v8M15 23.5h8M36.5 28h6v10H27"/>
+              </svg>
+            </div>
+            <h3>Замер</h3>
+            <p>Выезжаем на объект, проводим замеры и фиксируем детали.</p>
+          </article>
+          <article class="step-card">
+            <div class="step-top">
+              <span class="step-number">02</span>
+              <svg class="icon-svg step-icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+                <rect x="6.5" y="6.5" width="35" height="35" rx="2"/>
+                <path d="M13 34V21h8v-8h14M13 13h4M31 35h4M35 13v4"/>
+                <path d="M10 27h6M27 10v6" opacity=".62"/>
+              </svg>
+            </div>
+            <h3>Дизайн-проект</h3>
+            <p>Разрабатываем стильный и функциональный проект.</p>
+          </article>
+          <article class="step-card">
+            <div class="step-top">
+              <span class="step-number">03</span>
+              <svg class="icon-svg step-icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+                <path d="M5.5 10.5h37v27h-37zM5.5 19.5h37M5.5 28.5h37M17.5 10.5v9M31 10.5v9M12 19.5v9M26 19.5v9M18.5 28.5v9M35 28.5v9"/>
+              </svg>
+            </div>
+            <h3>Черновые работы</h3>
+            <p>Выполняем черновые работы с соблюдением технологий.</p>
+          </article>
+          <article class="step-card">
+            <div class="step-top">
+              <span class="step-number">04</span>
+              <svg class="icon-svg step-icon" viewBox="0 0 48 48" aria-hidden="true" focusable="false">
+                <rect x="5.5" y="8" width="28" height="12" rx="2"/>
+                <path d="M33.5 14h7v11H24v7M24 32v11M19 43h10"/>
+              </svg>
+            </div>
+            <h3>Чистовая отделка</h3>
+            <p>Выполняем чистовую отделку и финальные штрихи.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio section" id="portfolio" aria-labelledby="portfolio-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Портфолио</p>
+          <h2 id="portfolio-title">До и после</h2>
+          <p>Реальные трансформации наших проектов</p>
+          <span class="heading-line" aria-hidden="true"></span>
+        </div>
+
+        <div class="comparison" style="--position: 50%;">
+          <picture>
+            <source srcset="assets/kitchen-before.webp" type="image/webp">
+            <img class="comparison-image image-before" src="assets/kitchen-before.png" width="1448" height="1086" loading="lazy" decoding="async" alt="Кухня до ремонта">
+          </picture>
+          <picture>
+            <source srcset="assets/kitchen-after.webp" type="image/webp">
+            <img class="comparison-image image-after" src="assets/kitchen-after.png" width="1448" height="1086" loading="lazy" decoding="async" alt="Кухня после ремонта">
+          </picture>
+          <span class="comparison-label label-before">До</span>
+          <span class="comparison-label label-after">После</span>
+          <div class="comparison-divider" aria-hidden="true">
+            <span class="comparison-handle"><i></i><i></i></span>
+          </div>
+          <span class="comparison-keyboard-hint" id="comparison-help">Используйте клавиши влево и вправо для сравнения</span>
+          <input class="comparison-range" type="range" min="0" max="100" value="50" aria-label="Сравнить кухню до и после ремонта" aria-describedby="comparison-help" aria-valuetext="50% после ремонта">
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="calculator" aria-labelledby="cta-title">
+      <div class="container cta-inner">
+        <div class="cta-copy">
+          <svg class="guarantee-badge" viewBox="0 0 160 160" role="img" aria-label="5 лет гарантии" focusable="false">
+            <defs>
+              <radialGradient id="badge-bg" cx="50%" cy="42%" r="65%">
+                <stop stop-color="#302719"/>
+                <stop offset="0.62" stop-color="#17130d"/>
+                <stop offset="1" stop-color="#090909"/>
+              </radialGradient>
+              <linearGradient id="badge-gold" x1="28" y1="18" x2="132" y2="142" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#f7d98b"/>
+                <stop offset="0.5" stop-color="#d8a642"/>
+                <stop offset="1" stop-color="#9d641c"/>
+              </linearGradient>
+            </defs>
+            <circle cx="80" cy="80" r="74" fill="url(#badge-bg)" stroke="url(#badge-gold)" stroke-width="3"/>
+            <circle cx="80" cy="80" r="66" fill="none" stroke="url(#badge-gold)" stroke-width="1.2" opacity=".8"/>
+            <circle cx="80" cy="80" r="59" fill="none" stroke="#d8a642" stroke-width=".8" stroke-dasharray="2 4" opacity=".55"/>
+            <path d="M51 48c8-8.5 18-13 29-13s21 4.5 29 13M51 116c8 6.5 18 10 29 10s21-3.5 29-10" fill="none" stroke="#d8a642" stroke-width="1.2" opacity=".75"/>
+            <g fill="url(#badge-gold)" text-anchor="middle" font-family="Onest, Segoe UI, Arial, sans-serif">
+              <text x="80" y="82" font-size="50" font-weight="700">5</text>
+              <text x="80" y="101" font-size="15" font-weight="700" letter-spacing="3">ЛЕТ</text>
+              <text x="80" y="117" font-size="8.5" font-weight="700" letter-spacing="1.7">ГАРАНТИИ</text>
+            </g>
+            <path d="m80 20 2.2 4.5 5 .7-3.6 3.5.9 5-4.5-2.4-4.5 2.4.9-5-3.6-3.5 5-.7L80 20Z" fill="url(#badge-gold)"/>
+          </svg>
+          <div>
+            <p class="eyebrow">Бесплатная консультация</p>
+            <h2 id="cta-title">Рассчитайте свой проект</h2>
+            <p>Оставьте заявку — мы бесплатно оценим объём работ, подберём оптимальные решения и рассчитаем точную смету.</p>
+          </div>
+        </div>
+
+        <form class="estimate-form" id="estimate-form" novalidate>
+          <p class="form-hint">Введите номер — мы перезвоним через 15 минут</p>
+          <div class="form-row">
+            <div class="field">
+              <label for="name">Имя</label>
+              <input id="name" name="name" type="text" autocomplete="name" placeholder="Ваше имя" aria-describedby="name-error" aria-invalid="false">
+              <span class="field-error" id="name-error" aria-live="polite"></span>
+            </div>
+            <div class="field">
+              <label for="phone">Телефон</label>
+              <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+7 (___) ___-__-__" aria-describedby="phone-error" aria-invalid="false">
+              <span class="field-error" id="phone-error" aria-live="polite"></span>
+            </div>
+            <button class="button button-gold submit-button" type="submit">Получить точную смету</button>
+          </div>
+          <label class="consent">
+            <input id="consent" name="consent" type="checkbox" aria-describedby="consent-error" aria-invalid="false">
+            <span class="custom-checkbox" aria-hidden="true"></span>
+            <span>Нажимая на кнопку, вы даете согласие на обработку персональных данных</span>
+          </label>
+          <span class="field-error consent-error" id="consent-error" aria-live="polite"></span>
+          <p class="form-success" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+      <div class="container footer-line" id="contacts">
+        <p>Lux Renovation</p>
+        <a href="#top">Вернуться наверх</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
