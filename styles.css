@@ -245,7 +245,8 @@ input:focus-visible {
 
 .hero {
   position: relative;
-  min-height: 650px;
+  min-height: max(700px, 100vh);
+  min-height: max(700px, 100svh);
   padding-top: var(--header-height);
   overflow: hidden;
   border-bottom: 1px solid var(--border);
@@ -283,11 +284,12 @@ input:focus-visible {
   position: relative;
   z-index: 2;
   display: flex;
-  min-height: 578px;
+  min-height: calc(max(700px, 100vh) - var(--header-height));
+  min-height: calc(max(700px, 100svh) - var(--header-height));
   flex-direction: column;
   justify-content: flex-start;
-  padding-top: 82px;
-  padding-bottom: 42px;
+  padding-top: clamp(72px, 9svh, 92px);
+  padding-bottom: clamp(48px, 7svh, 68px);
 }
 
 .hero-copy {
@@ -1087,7 +1089,8 @@ h1 {
   }
 
   .hero {
-    min-height: 800px;
+    min-height: max(680px, 100vh);
+    min-height: max(680px, 100svh);
   }
 
   .hero-image {
@@ -1099,9 +1102,10 @@ h1 {
   }
 
   .hero-inner {
-    min-height: 734px;
+    min-height: calc(max(680px, 100vh) - var(--header-height));
+    min-height: calc(max(680px, 100svh) - var(--header-height));
     padding-top: 58px;
-    padding-bottom: 32px;
+    padding-bottom: 44px;
   }
 
   .hero-copy {
@@ -1162,13 +1166,15 @@ h1 {
   }
 
   .hero {
-    min-height: 860px;
+    min-height: max(820px, 100vh);
+    min-height: max(820px, 100svh);
   }
 
   .hero-inner {
-    min-height: 794px;
+    min-height: calc(max(820px, 100vh) - var(--header-height));
+    min-height: calc(max(820px, 100svh) - var(--header-height));
     padding-top: 46px;
-    padding-bottom: 26px;
+    padding-bottom: 34px;
   }
 
   .eyebrow {
